@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Victoria Trinh Portfolio</title>
+  <style>
+    html {
+      scroll-behavior: smooth; /* enables smooth scrolling */
+    }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <style>
+      /* AI prompt: how to add DaFont font in css? */
+      @font-face {
+        font-family: "Khiara Script";
+        src: url("KhiaraScript.ttf") format("truetype");
+      }
+
+      .containerHome {
+        width: 1200px;
+        height: 1850px;
+        margin: 0 auto;
+        background: #22516D;
+        padding: 20px;
+      }
+
+      body {
+        margin: 0;
+        padding: 0px;
+        background-color: #01162B;
+        line-height: 1.6;
+      }
+
+      header {
+        width: 1200px;
+        height: 45px;
+        position: sticky;
+        top: 0;
+        background-color: #998E78;
+        color: white;
+        padding: 20px;
+
+        margin: 0 auto;
+
+        display: flex;
+        /* puts items side-by-side */
+        justify-content: flex-end;
+        /* aligns to right side */
+        align-items: center;
+        gap: 80px;
+
+        z-index: 1200;
+        /* AI prompt: how can sticky header stay above images? */
+      }
+
+      header img {
+        position: relative;
+        right: 580px;
+      }
+
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      h1 {
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+        font-family: "Quicksand", sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        font-style: normal;
+        color: #80B2D2;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      h2 {
+        margin: 0;
+        padding: 10px;
+        font-family: "Quicksand", sans-serif;
+        font-weight: 400;
+        font-size: 32px;
+        font-style: normal;
+      }
+
+      h3 {
+        font-family: "Khiara Script", cursive;
+        font-size: 40px;
+        color: #7AACCB;
+      }
+
+      h4 {
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+        font-family: "Quicksand", sans-serif;
+        font-weight: 600;
+        font-size: 36px;
+        font-style: normal;
+        color: #7AACCB;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      h5 {
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+        font-family: "Quicksand", sans-serif;
+        font-weight: 600;
+        font-size: 40px;
+        font-style: normal;
+        color: #7AACCB;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .heropage1 {
+        width: 1200px;
+        height: 600px;
+        background-color: #01162B;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .heropage1-content img {
+        display: flex;
+        justify-content: center;
+        /* horizontally center */
+        align-items: center;
+        /* vertically center */
+        height: auto;
+        margin-top: 50px;
+        position: relative;
+        right: 80px;
+        /* move right */
+      }
+
+      .portfolioPic {
+        position: relative;
+        top: -100px;
+        left: 700px;
+      }
+
+      .contactsImg {
+        position: relative;
+        top: -250px;
+        left: -350px;
+      }
+
+      .contactNames {
+        position: relative;
+        top: -462px;
+        right: 296px;
+        line-height: 1.8;
+      }
+
+      .petalsHome {
+        position: relative;
+        top: -200px;
+        left: -680px;
+      }
+
+      .aboutBox {
+        position: relative;
+        top: -350px;
+        left: 80px;
+        width: 500px;
+        height: 240px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        /* help make drop shadow */
+        background: linear-gradient(to bottom,
+            rgba(103, 96, 82, 1) 0%,
+            rgba(85, 92, 89, 0.8) 40%,
+            rgba(66, 88, 96, 0.25) 100%);
+        background-color: #01162B;
+        opacity: 0.9;
+        margin: 0 auto;
+        padding: 10px;
+      }
+
+      .abtButton {
+        color: #7EA2B8;
+        padding: 10px 30px;
+        font-size: 20px;
+        font-family: "Quicksand", sans-serif;
+        border: 5px solid transparent;
+        /* thickness */
+        background: linear-gradient(#003859, #003859) padding-box,
+          linear-gradient(to bottom, #675F51, #332F28) border-box;
+
+        border-radius: 100px;
+        /* rounded corners */
+        cursor: pointer;
+        /* pointer on hover */
+        transition: background-color 0.3s ease;
+        display: block;
+        margin: 20px auto;
+        position: relative;
+        top: -400px;
+        left: 300px;
+      }
+
+      .abtButton:hover {
+        background-color: #22516D;
+      }
+
+      .line {
+        height: 2.2px;
+        background: white;
+        width: 90%;
+        margin: 0 auto;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        position: relative;
+        bottom: 250px;
+      }
+
+      .checkworkButton {
+        color: #7EA2B8;
+        padding: 10px 30px;
+        font-size: 32px;
+        font-family: "Quicksand", sans-serif;
+        border: 5px solid transparent;
+        /* thickness */
+        background: linear-gradient(#003859, #003859) padding-box,
+          linear-gradient(to bottom, #675F51, #332F28) border-box;
+
+        border-radius: 100px;
+        /* rounded corners */
+        cursor: pointer;
+        /* pointer on hover */
+        transition: background-color 0.3s ease;
+        display: block;
+        margin: 20px auto;
+        position: relative;
+        top: -100px;
+      }
+
+      .singlePetal {
+        position: relative;
+        top: -280px;
+        left: 690px;
+      }
+
+      .workGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 20px;
+        gap: 95px;
+        max-width: 1000px;
+        margin: 0 auto;
+        position: relative;
+        top: -270px;
+      }
+
+      .workGrid div {
+        background-color: #7EA2B8;
+        border: 8px solid #003859;
+        font-size: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        aspect-ratio: 1 / 1;
+        box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.8);
+      }
+
+      .hakuHome {
+        position: relative;
+        top: -610px;
+        left: 100px;
+      }
+
+      .blendHome {
+        position: relative;
+        top: -1030px;
+        left: 450px;
+      }
+
+      .clawHome {
+        position: relative;
+        top: -1285px;
+        left: 845px;
+      }
+      
+       .twoworkHome {
+        position: relative;
+        top: -1251px;
+        left: -360px;
+      }
+
+      .threeworkHome {
+        position: relative;
+        top: -1355px;
+      }
+
+      .cinemaHome {
+        position: relative;
+        top: -1458px;
+        left: 367px;
+      }
+
+      /* AI prompt: can I crop an image? */
+      .squareCrop {
+        width: 300px;
+        /* crop width */
+        aspect-ratio: 1 / 1;
+        overflow: hidden;
+        /* hides the rest of the image */
+      }
+
+      .squareCrop img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* crops image to fit box */
+        object-position: center;
+        /* shift image left */
+      }
+      
+ .heropage2 {
+        width: 1200px;
+        height: 600px;
+        background-color: #01162B;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      
+      .heropage2-content img {
+        display: flex;
+        justify-content: center;
+        /* horizontally center */
+        align-items: center;
+        /* vertically center */
+        height: auto;
+        margin-top: 50px;
+        position: relative;
+        right: 250px;
+        /* move right */
+      }
+     .heropage2 {
+        width: 1200px;
+        height: 600px;
+        background-color: #01162B;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      
+      .heropage2-content img {
+        display: flex;
+        justify-content: center;
+        /* horizontally center */
+        align-items: center;
+        /* vertically center */
+        height: auto;
+        margin-top: 50px;
+        position: relative;
+        right: 250px;
+        /* move right */
+      }
+      
+      .containerAbout {
+        width: 1200px;
+        height: 2150px;
+        margin: 0 auto;
+        /* centers the box */
+        background: #22516D;
+        padding: 20px;
+      }
+
+     .abtPic2 {
+        position: relative;
+        top: 50px;
+        left: 50px;
+      }
+      .abtPic1 {
+        position: relative;
+        top: -90px;
+        left: 100px;
+      }
+      .abtPic3 {
+        position: relative;
+        top: -950px;
+        left: 150px;
+      }
+       .bioBox {
+        position: relative;
+        top: -1300px;
+        left: 295px;
+        width: 400px;
+        height: 500px;
+        margin: 0 auto;
+        padding: 10px;
+      }
+      
+      .abtPetals1 {
+        position: relative;
+        top: -1965px;
+        left: 920px;
+      }
+      
+      .aboutGrid {
+        display: grid;
+        grid-template-rows: auto auto;
+        justify-items: center;
+        align-items: center;
+        padding: 20px;
+        gap: 350px;
+        max-width: 1000px;
+        margin: 0 auto;
+        position: relative;
+        top: -2290px;
+      }
+      
+      .designSub {
+        position: relative;
+        top: -1600px;
+        right: 200px;
+      }
+      
+      .line1 {
+        height: 2.2px;
+        background: white;
+        width: 50%;
+        margin: 0 auto;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        position: relative;
+        top: -2860px;
+      }
+      
+      .hobbiesSub {
+        position: relative;
+        top: -1560px;
+        right: 100px;
+      }
+      
+      .line2 {
+        height: 2.2px;
+        background: white;
+        width: 50%;
+        margin: 0 auto;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        position: relative;
+        top: -2230px;
+      }
+      
+      .abtPetals2 {
+        position: relative;
+        top: -2780px;
+        left: -10px;
+      }
+  </style>
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header>
+    <img src="VT_Logo.png" alt="Victoria Trinh" width="95px">
+    <h2><a href="#home">home</a></h2>
+    <h2><a href="#about">about</a></h2>
+    <h2><a href="#work">work</a></h2>
+  </header>
+
+  <!-- HOME SECTION -->
+  <section id="home" class="heropage1">
+    <div class="heropage1-content">
+      <img src="VTrinh.png" alt="Victoria Trinh" width="1350px">
+    </div>
+
+    <div class="containerHome">
+      <img src="PortfolioPic.jpeg" alt="Portfolio Image of Victoria Trinh" width="400px" class="portfolioPic">
+      <img src="contactsLogos.png" alt="Contacts Image" width="200px" class="contactsImg">
+      <img src="petalsHome.png" alt="Blue Petal Design" width="300px" class="petalsHome">
+
+      <section class="contactNames">
+        <h4>: Victoria Trinh<br>&nbsp;: glimpse_of_v </h4>
+      </section>
+
+      <section class="aboutBox">
+        <h1>Welcome to my portfolio! I’m Victoria, a second-year GBDA student at the University of Waterloo looking to build my skills through hands-on experiences and real-world projects.</h1>
+      </section>
+
+      <button class="abtButton">about me</button>
+      <div class="line"></div>
+      <button class="checkworkButton">check out some of my work!</button>
+
+      <img src="singlePetal.png" alt="One Blue Petal Design" width="300px" class="singlePetal">
+
+      <div class="workGrid">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="hakuHome"><img src="Haku Design 2.png" alt="Graphic Design of Haku" width="275px"></div>
+      <div class="blendHome"><img src="homepageBlend.png" alt="Blender House" width="270px"></div>
+      <div class="clawHome"><img src="ClawLand_SilentFilm.png" alt="Claw Arcade" width="240px"></div>
+
+      <div class="twoworkHome"><h5>2D Work</h5></div>
+      <div class="threeworkHome"><h5>3D Work</h5></div>
+      <div class="cinemaHome"><h5>Cinematography</h5></div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="heropage2">
+    <div class="heropage2-content">
+      <img src="About.png" alt="About Me" width="1450px">
+    </div>
+
+    <div class="containerAbout">
+      <div class="abtPic2"><img src="abtPic2.png" alt="About Me Pic 2" width="300px"></div>
+      <div class="abtPic1"><img src="abtPic1.png" alt="About Me Pic 1" width="400px"></div>
+      <div class="abtPic3"><img src="abtPic3.png" alt="About Me Pic 3" width="600px"></div>
+
+      <section class="bioBox">
+        <h1>Hi! I’m Victoria Trinh, a Chinese-Vietnamese Toronto-based designer and visual storyteller with a passion for clean, modern design combined with the expressive aesthetics of Asian visual culture...</h1>
+      </section>
+
+      <img src="petalsAbt1.png" alt="Three Blue Petals Design" width="300px" class="abtPetals1">
+      <img src="Design_Interests.png" alt="Design Interests subtitle" width="1500px" class="designSub">
+      <img src="Hobbies.png" alt="Hobbies subtitle" width="1500px" class="hobbiesSub">
+
+      <div class="aboutGrid">
+        <div><h1>My work spans graphic design, UI/UX, cinematography, and marketing...</h1></div>
+        <div><h1>Outside of design, you can usually find me on a volleyball court...</h1></div>
+      </div>
+
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <button class="checkworkButton">check out some of my work!</button>
+
+      <div class="workGrid">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <img src="petalsAbt2.png" alt="Three Blue Petals Design" width="300px" class="abtPetals2">
+    </div>
+  </section>
+
+  <!-- WORK SECTION -->
+  <section id="work" class="heropage3">
+    <div class="heropage3-content">
+      <img src="Work.png" alt="My Work subtitle" width="1450px">
+    </div>
+
+    <div class="containerWork">
+      <img src="PortfolioPic.jpeg" alt="Portfolio Image of Victoria Trinh" width="400px" class="portfolioPic">
+      <img src="contactsLogos.png" alt="Contacts Image" width="200px" class="contactsImg">
+      <img src="petalsHome.png" alt="Blue Petal Design" width="300px" class="petalsHome">
+
+      <section class="contactNames">
+        <h4>: Victoria Trinh<br>&nbsp;: glimpse_of_v </h4>
+      </section>
+
+      <section class="aboutBox">
+        <h1>Welcome to my portfolio! I’m Victoria, a second-year GBDA student at the University of Waterloo...</h1>
+      </section>
+
+      <button class="abtButton">about me</button>
+      <div class="line"></div>
+      <button class="checkworkButton">check out some of my work!</button>
+
+      <img src="singlePetal.png" alt="One Blue Petal Design" width="300px" class="singlePetal">
+
+      <div class="workGrid">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="hakuHome"><img src="Haku Design 2.png" alt="Graphic Design of Haku" width="275px"></div>
+      <div class="blendHome"><img src="homepageBlend.png" alt="Blender House" width="270px"></div>
+      <div class="clawHome"><img src="ClawLand_SilentFilm.png" alt="Claw Arcade" width="240px"></div>
+
+      <div class="twoworkHome"><h5>2D Work</h5></div>
+      <div class="threeworkHome"><h5>3D Work</h5></div>
+      <div class="cinemaHome"><h5>Cinematography</h5></div>
+    </div>
+  </section>
+
+</body>
+</html>
